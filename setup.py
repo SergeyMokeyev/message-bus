@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 
 setup(
@@ -9,14 +9,13 @@ setup(
     description='Message bus between services',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/SergeyMokeyev/message-bus.git',
+    url='https://github.com/SergeyMokeyev/messagebus.git',
     data_files=[
         ('README.md', ['README.md'])
     ],
-    package_dir={
-        '': 'src'
-    },
-    packages=find_packages(where='src'),
+    packages=[
+        'message_bus'
+    ],
     classifiers=[
         'Programming Language :: Python :: 3.8',
         'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)'
